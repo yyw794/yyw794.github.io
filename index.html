@@ -1,1 +1,118 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="./reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="./reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? './reveal.js/css/print/pdf.css' : './reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="./reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section><section id="年总结2019年目标" class="titleslide slide level1"><h1>2018年总结&amp;2019年目标</h1></section><section id="年做的好" class="slide level2">
+<h2>2018年做的好</h2>
+<ul>
+<li class="fragment">架构演进为BS架构，后端技术云化</li>
+<li class="fragment">UI美观度上升</li>
+<li class="fragment">用户调研，不同角色都跑过医院</li>
+</ul>
+</section><section id="年做的不好" class="slide level2">
+<h2>2018年做的不好</h2>
+</section><section id="产品技术实现" class="slide level2">
+<h2>产品技术实现</h2>
+<ul>
+<li class="fragment">CS转BS，断崖式变更</li>
+<li class="fragment">改为BS架构后，插件没有及时跟进</li>
+<li class="fragment">算法模块从c++切换为python，性能下降</li>
+<li class="fragment">未做好资源分配，算法与后端抢资源，导致长时间不响应</li>
+<li class="fragment">pacs模块选择的dicom库pydicom，未充分验证就产品化，带来了一些故障。后期转换为DCMTK</li>
+<li class="fragment">影像组学存在重复？</li>
+</ul>
+</section><section id="产品需求" class="slide level2">
+<h2>产品需求</h2>
+<ul>
+<li class="fragment">需求流程缺失，不规范,先软件实现，再补需求文档</li>
+<li class="fragment">需求被用户牵着鼻子走</li>
+<li class="fragment">需求不具体</li>
+</ul>
+</section><section id="产品使用" class="slide level2">
+<h2>产品使用</h2>
+<ul>
+<li class="fragment">产品部署后的反馈很少</li>
+<li class="fragment">使用少</li>
+<li class="fragment">没有嵌入医生的工作流，可选性使用</li>
+<li class="fragment">假阳多，误诊高，增加医生二次判断的工作量</li>
+</ul>
+</section><section id="年目标" class="slide level2">
+<h2>2019年目标</h2>
+</section><section id="质量提升" class="slide level2">
+<h2>质量提升</h2>
+<ul>
+<li class="fragment">规范的流程</li>
+<li class="fragment">自动化测试</li>
+<li class="fragment">模拟pacs/ris的对接测试</li>
+<li class="fragment">增加深度合作医院的产品使用反馈</li>
+</ul>
+</section><section id="提升ux" class="slide level2">
+<h2>提升UX</h2>
+<ul>
+<li class="fragment">用户调研团队做起来</li>
+<li class="fragment">增加团队对医学业务的了解</li>
+<li class="fragment">更简洁的UI</li>
+<li class="fragment">性能优化，前端异步取代串联，后端和算法端的图片传输问题</li>
+</ul>
+</section><section id="标准软件开发流程" class="slide level2">
+<h2>标准软件开发流程</h2>
+<ul>
+<li class="fragment">CFDA认证2类，3类</li>
+<li class="fragment">人员能力沉淀进入平台</li>
+<li class="fragment">数字化转型</li>
+</ul>
+</section><section id="降成本" class="slide level2">
+<h2>降成本</h2>
+<ul>
+<li class="fragment">算法引擎优化，降低推理所需GPU，尝试CPU推理</li>
+<li class="fragment">软件部署的简化和自动化</li>
+<li class="fragment">标注平台的数据自动化管理，含进入的数据清洗和输出的标准格式</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="./reveal.js/lib/js/head.min.js"></script>
+  <script src="./reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: './reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: './reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
